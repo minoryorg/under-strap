@@ -39,6 +39,8 @@ $(document).ready(function() {
     $('#wp-calendar').addClass('table');
     // Text
     $('.textwidget').addClass('panel-body');
+    // Tag Cloud
+    $('.tagcloud').addClass('panel-body');
     // Form
     $('select,textarea,input:not([type=button],[type=submit])').addClass('form-control');
     $('[type=button],[type=submit]').addClass('btn btn-default');
