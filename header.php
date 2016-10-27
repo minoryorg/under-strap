@@ -53,4 +53,4 @@
 		</nav>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container" style="padding-top: 70px;">
+	<div id="content" class="site-content" style="padding-top: 70px;">

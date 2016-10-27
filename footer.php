@@ -14,7 +14,7 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info container">
+		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'under-strap' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'under-strap' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'under-strap' ), 'under-strap', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
@@ -27,6 +27,8 @@
 <script type="text/javascript">
 $(document).ready(function() {
 	// Content
+    $('.site-content').addClass('container');
+    $('.site-info').addClass('container');
     $('.content-area').addClass('col-md-8');
 	// Widget
     $('.widget-area').addClass('col-md-4');
