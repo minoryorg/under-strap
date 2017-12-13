@@ -104,12 +104,13 @@ add_action( 'widgets_init', 'under_strap_widgets_init' );
  * Enqueue scripts and styles.
  */
 function under_strap_scripts() {
-    wp_enqueue_style( 'under-strap-style', get_stylesheet_uri() );
     wp_enqueue_style( 'under-strap-font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
     wp_enqueue_style( 'under-strap-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
     if ( get_option('color') && get_option('color') != 'default' ):
         wp_enqueue_style( 'under-strap-bootswatch', '//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/' . get_option('color') . '/bootstrap.min.css' );
     endif;
+    wp_enqueue_style( 'under-strap-style', get_stylesheet_uri() );
+
     wp_enqueue_script( 'under-strap-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
     wp_enqueue_script( 'under-strap-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
     wp_enqueue_script( 'under-strap-jquery', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '20151215', true );
