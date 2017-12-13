@@ -25,13 +25,13 @@ PCとスマホの両方のデザインを作るのは面倒くさかけん、こ
 
 ### functions.php
     function under_strap_scripts() {
-    	・・・
-    	wp_enqueue_style( 'under-strap-font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
-    	wp_enqueue_style( 'under-strap-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
-    	・・・
-    	wp_enqueue_script( 'under-strap-bootstrap', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '20151215', true );
-    	wp_enqueue_script( 'under-strap-bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js', array(), '20151215', true );
-    	・・・
+        ・・・
+        wp_enqueue_style( 'under-strap-font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' );
+        wp_enqueue_style( 'under-strap-bootstrap', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' );
+        ・・・
+        wp_enqueue_script( 'under-strap-bootstrap', '//cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js', array(), '20151215', true );
+        wp_enqueue_script( 'under-strap-bootstrap', '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js', array(), '20151215', true );
+    ・・・
     }
 
 後は、Bootstrapの書き方の通り「**header.php**」ナビを追加したり、検索フォームのレイアウトを変えるために「**searchform.php**」を追加しとーけんね。（詳細はソースを見てね！）  
