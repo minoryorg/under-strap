@@ -43,7 +43,7 @@ PCとスマホの両方のデザインを作るのは面倒くさかけん、こ
 
 ### footer.php
     <script type="text/javascript">
-        $(document).ready(function() {
+    $(document).ready(function() {
         // Content
         $('.content-area').addClass('col-md-8');
         // Widget
