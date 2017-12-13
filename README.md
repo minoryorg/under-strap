@@ -44,9 +44,9 @@ PCとスマホの両方のデザインを作るのは面倒くさかけん、こ
 ### footer.php
     <script type="text/javascript">
         $(document).ready(function() {
-    	// Content
+        // Content
         $('.content-area').addClass('col-md-8');
-    	// Widget
+        // Widget
         $('.widget-area').addClass('col-md-4');
         $('.widget > ul').addClass('list-group');
         $('.widget > ul > li').addClass('list-group-item');
@@ -104,11 +104,11 @@ https://bootswatch.com/
 
 ### functions.php
     function under_strap_scripts() {
-    	・・・
-    	if ( get_option('color') && get_option('color') != 'default' ):
-    		wp_enqueue_style( 'under-strap-bootswatch', '//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/' . get_option('color') . '/bootstrap.min.css' );
-    	endif;
-    	・・・
+        ・・・
+        if ( get_option('color') && get_option('color') != 'default' ):
+            wp_enqueue_style( 'under-strap-bootswatch', '//maxcdn.bootstrapcdn.com/bootswatch/3.3.7/' . get_option('color') . '/bootstrap.min.css' );
+        endif;
+        ・・・
     }
 
 説明はここまで。  
